@@ -8,9 +8,9 @@ Points are added as you earn rewards, and there are also grades in the game.<br>
 <br>
 <br>
 <br>
-#--- updated information ---
+--- updated information ---
 <br>
-#Blunt Knife [devlog]
+# Blunt Knife [devlog]
 <br>
 <h1> A game about slicing apples using a kitchen knife. </h1>
 <br>
