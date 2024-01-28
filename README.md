@@ -12,7 +12,7 @@ Points are added as you earn rewards, and there are also grades in the game.<br>
 <br>
 # Blunt Knife [devlog]
 <br>
-<h1> A game about slicing apples using a kitchen knife. </h1>
+A game about slicing apples using a kitchen knife.
 <br>
 In this game, you will need to slice the apples before they fall to the floor and spoil.<br>
 the knife is a little blunt, so you need to make a swing next to the apple, pointing it straight, without this nothing will work.<br>
