@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apple</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="noselect">
+    
+    <div id="game-area">
+        <div><p id="com">Apple: <a id="score"></a></p></div>
+        <div id="apple" class="container"></div>
+        <div id="mouse">
+            <div id="knife"></div>
+        </div>
+    </div>
+    
+
+    <!-- <img src="uploads/apple.jpg" alt="apple"></img> -->
+    <!-- <img src="uploads/knife.jpg" alt="knife"></img> -->
+
+    <script>
+        var elem = document.documentElement;
+      
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+          } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+          }
+      
+          const link = document.createElement('button');
+          link.id = "full-1";
+          link.innerHTML = "Close";
+          link.onclick = closeFullscreen;
+          document.body.append(link);
+      
+          const last = document.getElementById("full-2");
+          document.body.removeChild(last);
+        }
+      
+        function closeFullscreen() {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+      
+          const link = document.createElement('button');
+          link.id = "full-2";
+          link.innerHTML = "Fullscreen";
+          link.onclick = openFullscreen;
+          document.body.append(link);
+      
+          const last = document.getElementById("full-1");
+          document.body.removeChild(last);
+        }
+        closeFullscreen()
+      </script>
+    
+    <script src="knife.js"></script>
+    <script src="script.js"></script>
+    <script src="window.js"></script>
+</body>
+</html>
